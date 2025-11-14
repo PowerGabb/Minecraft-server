@@ -14,7 +14,7 @@ RUN echo "eula=true" > /minecraft/eula.txt
 EXPOSE 25565
 
 # Set memory allocation (2GB)
-ENV MEMORY_SIZE="2048M"
+ENV MEMORY_SIZE="512M"
 
 # Run the server
 CMD java -Xmx${MEMORY_SIZE} -Xms${MEMORY_SIZE} -jar server.jar nogui
