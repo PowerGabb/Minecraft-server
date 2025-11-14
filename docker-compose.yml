@@ -12,7 +12,9 @@ services:
       - ./plugins:/minecraft/plugins
       - ./config:/minecraft/config
     environment:
-      - MEMORY_SIZE=2048M
+      - MEMORY_SIZE=4608M
     restart: unless-stopped
+    mem_limit: 5g
+    mem_reservation: 4g
     stdin_open: true
     tty: true

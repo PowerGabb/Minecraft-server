@@ -13,9 +13,8 @@ RUN echo "eula=true" > /minecraft/eula.txt
 # Expose Minecraft port
 EXPOSE 25565
 
-# Set memory allocation (2GB)
-ENV MEMORY_SIZE="4096M"
+# Set memory allocation (4.5GB, leaving 0.5GB for system overhead)
+ENV MEMORY_SIZE="4608M"
 
 # Run the server
 CMD java -Xmx${MEMORY_SIZE} -Xms${MEMORY_SIZE} -jar server.jar nogui
-    
