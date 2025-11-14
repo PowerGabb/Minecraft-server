@@ -1,0 +1,48 @@
+[07:03:41] [ServerMain/ERROR]: Failed to load properties from file: server.properties
+java.nio.file.NoSuchFileException: server.properties
+	at java.base/sun.nio.fs.UnixException.translateToIOException(Unknown Source) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source) ~[?:?]
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(Unknown Source) ~[?:?]
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(Unknown Source) ~[?:?]
+	at java.base/java.nio.file.Files.newByteChannel(Unknown Source) ~[?:?]
+	at java.base/java.nio.file.Files.newByteChannel(Unknown Source) ~[?:?]
+	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(Unknown Source) ~[?:?]
+	at java.base/java.nio.file.Files.newInputStream(Unknown Source) ~[?:?]
+	at apy.b(SourceFile:62) ~[server-1.21.4.jar:?]
+	at apv.a(SourceFile:141) ~[server-1.21.4.jar:?]
+	at apw.<init>(SourceFile:12) ~[server-1.21.4.jar:?]
+	at net.minecraft.server.Main.main(SourceFile:116) ~[server-1.21.4.jar:?]
+	at net.minecraft.bundler.Main.lambda$run$0(Main.java:54) ~[?:?]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
+[07:03:41] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[07:03:42] [ServerMain/INFO]: No existing world data, creating new world
+[07:03:42] [ServerMain/INFO]: Loaded 1370 recipes
+[07:03:42] [ServerMain/INFO]: Loaded 1481 advancements
+[07:03:43] [Server thread/INFO]: Starting minecraft server version 1.21.4
+[07:03:43] [Server thread/INFO]: Loading properties
+[07:03:43] [Server thread/INFO]: Default game type: SURVIVAL
+[07:03:43] [Server thread/INFO]: Generating keypair
+[07:03:43] [Server thread/INFO]: Starting Minecraft server on *:25565
+[07:03:43] [Server thread/INFO]: Using epoll channel type
+[07:03:43] [Server thread/INFO]: Preparing level "world"
+[07:03:47] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[07:03:47] [Worker-Main-2/INFO]: Preparing spawn area: 2%
+[07:03:47] [Worker-Main-7/INFO]: Preparing spawn area: 2%
+[07:03:48] [Worker-Main-5/INFO]: Preparing spawn area: 2%
+[07:03:48] [Worker-Main-7/INFO]: Preparing spawn area: 2%
+[07:03:49] [Worker-Main-3/INFO]: Preparing spawn area: 18%
+[07:03:49] [Worker-Main-3/INFO]: Preparing spawn area: 18%
+[07:03:50] [Worker-Main-3/INFO]: Preparing spawn area: 51%
+[07:03:50] [Worker-Main-1/INFO]: Preparing spawn area: 51%
+[07:03:51] [Server thread/INFO]: Time elapsed: 3855 ms
+[07:03:51] [Server thread/INFO]: Done (7.779s)! For help, type "help"
+[07:04:51] [Server thread/INFO]: Server empty for 60 seconds, pausing
+[07:34:30] [User Authenticator #1/INFO]: Disconnecting RangWantMoney (/172.18.0.1:44170): Failed to verify username!
+[07:34:30] [User Authenticator #1/ERROR]: Username 'RangWantMoney' tried to join with an invalid session
+[07:34:30] [Server thread/INFO]: RangWantMoney (/172.18.0.1:44170) lost connection: Failed to verify username!
+[07:34:39] [User Authenticator #2/INFO]: Disconnecting RangWantMoney (/172.18.0.1:51752): Failed to verify username!
+[07:34:39] [User Authenticator #2/ERROR]: Username 'RangWantMoney' tried to join with an invalid session
+[07:34:39] [Server thread/INFO]: RangWantMoney (/172.18.0.1:51752) lost connection: Failed to verify username!
+[07:35:32] [User Authenticator #3/INFO]: Disconnecting RangWantMoney (/172.18.0.1:38954): Failed to verify username!
+[07:35:32] [User Authenticator #3/ERROR]: Username 'RangWantMoney' tried to join with an invalid session
+[07:35:33] [Server thread/INFO]: RangWantMoney (/172.18.0.1:38954) lost connection: Failed to verify username!

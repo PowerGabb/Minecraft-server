@@ -6,6 +6,7 @@ WORKDIR /minecraft
 
 # Copy server files
 COPY server.jar /minecraft/
+COPY server.properties /minecraft/
 
 # Create eula.txt (auto-accept EULA)
 RUN echo "eula=true" > /minecraft/eula.txt
