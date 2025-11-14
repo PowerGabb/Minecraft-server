@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  minecraft:
+    build: .
+    container_name: minecraft-server
+    ports:
+      - "25565:25565"
+    volumes:
+      - ./world:/minecraft/world
+      - ./logs:/minecraft/logs
+      - ./plugins:/minecraft/plugins
+      - ./config:/minecraft/config
+    environment:
+      - MEMORY_SIZE=2048M
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
