@@ -6,8 +6,13 @@ WORKDIR /minecraft
 
 # Copy server files
 COPY server.jar /minecraft/
-COPY eula.txt /minecraft/ 
-COPY server.properties /minecraft/
+
+# Copy optional config files if they exist
+COPY eula.txt* /minecraft/ 2>/dev/null || true
+COPY server.properties* /minecraft/ 2>/dev/null || true
+
+# Create eula.txt if not exists (auto-accept EULA)
+RUN echo "eula=true" > /minecraft/eula.txt
 
 # Expose Minecraft port
 EXPOSE 25565
